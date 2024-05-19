@@ -9,3 +9,6 @@ Configuración de GPIO: En la función main(), se habilita el reloj para el puer
 Configuración del sistema: Se llama a la función SystemClock_Config() para configurar el reloj del sistema a 16 MHz. Luego, se inicializan los tres temporizadores con las funciones TIM2_Init(), TIM6_Init() y TIM21_Init().
 Bucle principal: En el bucle while(1), se comprueba continuamente el registro de estado (SR) de cada temporizador. Si el bit de actualización (bit 0) está establecido, se limpia el bit y se cambia el estado del LED correspondiente.
 Funciones de inicialización del temporizador: Las funciones TIM2_Init(), TIM6_Init() y TIM21_Init() configuran los temporizadores TIM2, TIM6 y TIM21, respectivamente. Establecen los valores de los registros de prescaler (PSC) y auto-reload (ARR) para determinar la frecuencia de las interrupciones del temporizador.
+
+
+el video de demostracion se muestra aqui https://youtu.be/vWePHX4b15w
